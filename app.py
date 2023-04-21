@@ -105,4 +105,5 @@ def predict():
     return render_template('Major.html',prediction_text="This model is saying {} ".format(message))
 
 
-app.run()
+if __name__=="__main__":
+  app.run()
