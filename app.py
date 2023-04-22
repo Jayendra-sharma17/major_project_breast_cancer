@@ -23,10 +23,12 @@ def aboutusnew():
     return render_template('aboutusnew.html')
 
 @app.route('/contact')
-def aboutusnew():
+def contact():
     return render_template('contact.html')
 
-
+@app.route('/Gallery')
+def Gallery():
+    return render_template('Gallery.html')
 
 @app.route('/Major')
 def Major():
