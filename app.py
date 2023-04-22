@@ -42,7 +42,18 @@ def Major():
 @app.route('/Minor')
 def Minor():
   
-  return render_template('Minor.html') 
+  return render_template('Minor.html')
+
+@app.route('/contact')
+def Minor():
+  
+  return render_template('contact.html')
+
+@app.route('/Gallery')
+def Minor():
+  
+  return render_template('Gallery.html')
+
 
 @app.route('/predict',methods=['GET'])
 def predict():
