@@ -42,15 +42,7 @@ def Major():
 @app.route('/Minor')
 def Minor():
   
-  return render_template('Minor.html')
-
-
-
-@app.route('/Gallery')
-def Minor():
-  
-  return render_template('Gallery.html')
-
+  return render_template('Minor.html') 
 
 @app.route('/predict',methods=['GET'])
 def predict():
@@ -113,5 +105,5 @@ def predict():
     return render_template('Major.html',prediction_text="This model is saying {} ".format(message))
 
 
-if __name__=="__main__":
-  app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
