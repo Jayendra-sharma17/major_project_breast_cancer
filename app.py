@@ -44,10 +44,7 @@ def Minor():
   
   return render_template('Minor.html')
 
-@app.route('/contact')
-def Minor():
-  
-  return render_template('contact.html')
+
 
 @app.route('/Gallery')
 def Minor():
