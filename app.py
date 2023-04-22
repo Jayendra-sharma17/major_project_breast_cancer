@@ -22,15 +22,10 @@ def home():
 def aboutusnew():
     return render_template('aboutusnew.html')
 
-@app.route('/contact',methods=['POST','GET'])
-def contact():
-    
-    Name=request.form['Name']
-    Password=request.form['Password']
-    Email=request.form['Email']
-    rep_pass=request.form['rep_pass']
-    text="Welcome %s %Name to my website"
-    return render_template('contact.html',txt_name=text)
+@app.route('/contact')
+def aboutusnew():
+    return render_template('contact.html')
+
 
 
 @app.route('/Major')
